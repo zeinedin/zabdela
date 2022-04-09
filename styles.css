@@ -58,7 +58,7 @@ header {
     padding: 20px 0;
 }
 .logo{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--main-color);
 }
@@ -68,7 +68,7 @@ header {
     column-gap: 1.5rem;
 }
 .nav_link {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 4px 8px;
     border-radius: 0.2rem;
     color: var(--box-color)
