@@ -58,7 +58,7 @@ header {
     padding: 20px 0;
 }
 .logo{
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     font-weight: 600;
     color: var(--main-color);
 }
@@ -68,7 +68,7 @@ header {
     column-gap: 1.5rem;
 }
 .nav_link {
-    font-size: 0.94rem;
+    font-size: 1.5rem;
     padding: 4px 8px;
     border-radius: 0.2rem;
     color: var(--box-color)
@@ -661,6 +661,9 @@ footer .fline{
     
 }
 @media (max-width:635px){
+    .about_content{
+        grid-template-columns: 1fr;
+    }
     .services_box p {
         font-size: 0.7rem;
     }
@@ -722,22 +725,151 @@ footer .fline{
             margin-left: 33px;
         }
 }
-@media (width:570px){
+@media (max-width:570px){
+    
     .home {
-        min-height: 600px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .container {
+        
+        grid-template-columns: 1fr;
+       
+    }
+
+    .social {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        column-gap: 4rem;
+        background: #00CDDA;
+        width: 423px;
+        height: 87px;
         justify-content: center;
-        padding-top: 15rem;
+        align-items: center;
+        border-radius: 33px;
+        margin-top: 150px;
+    }
+    .social .uil {
+        font-size: 3rem;
+    }
+
+    .home_text h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin-left: 115px;
+    }
+    .home_text p {
+        font-size: 2rem;
+        margin-left: 115px;
+    }
+    .home_text h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        margin-left: 115px;
+    }
+    .home_text > .btn {
+        margin-left: 150px;
+        
+        font-size: 1.4rem;
     }
     .about_content {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1.2rem;
     }
-    
+    div .home_logo {
+        width: 202px;
+        height: 200px;
+        right: 6px;
+    }
+    .home_logo h1 {
+        font-size: 42px;
+        top: 46px;
+    }
+    .about_data h2 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .about_data h2> span {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .about_data> .btn {
+        font-size: 1.6rem;
+        
+    }
+    .about_text p {
+        font-size: 1.2rem;
+        letter-spacing: 0px;
+        
+    }
     .line {
         display: none;
+    }
+    div .home_logo {
+        width: 150px;
+        height: 150px;
+        
+    }
+    .services_content {
+        display: grid;
+        grid-template-columns: 1fr;
+      
+    }
+    .projects_content {
+        display: grid;
+        grid-template-columns:  1fr;
+        
+    }
+    .contact_content {
+        display: grid;
+        grid-template-columns:  1fr;
+    }
+    .contact_left {
+        left: 130px;
+    }
+    .contact_left-left .social {
+        column-gap: 3.5rem;
+        width: 390px;
+        height: 82px;
+        margin-top: 121px;
+    }
+    .contact_form .send_btn {
+        width: 432px;
+        margin-left: 10px;
+        margin-top: 15px;
+        padding: 16px;
+    }
+    footer .fline {
+        margin-left: 56px;
+    }
+    .sitemap {
+        margin: 0;
+        column-gap: 3rem;
+        
+    }
+}
+@media (max-width:450px) {
+    .contact_form {
+        margin-left: -25px;
+    }
+    .contact_form .send_btn {
+        
+        margin-left: -15px;
+        
+    }
+    .contact_left-left .social {
+       
+        width: 321px;
+        
+    }
+    .contact_left {
+        
+        left: 70px;
+        top: 50px;
+    }
+    .sitemap {
+       
+        column-gap: 0.1rem;
     }
 }
